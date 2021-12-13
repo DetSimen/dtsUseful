@@ -33,6 +33,7 @@ protected:
     TEncoder(TEncoder&&) = delete;
 
     void init(void) override {
+        FInitNeed = false;
         pinMode(FPinA, INPUT_PULLUP);
         pinMode(FPinB, INPUT_PULLUP);
         pinMode(FPin,  INPUT_PULLUP);
@@ -115,7 +116,7 @@ public:
 
         FButtonPressTime = 0;
 
-        SetReadInterval(10);
+        SetReadInterval(5);
         classname = F("TEncoder");
     }
 };
