@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{49eae978-4561-47c2-9e4a-3c37211fe6dc}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)readme.txt" />
+    <Text Include="$(MSBuildThisFileDirectory)library.properties" />
+    <Text Include="$(MSBuildThisFileDirectory)dtsLibAll.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- <ClInclude Include="$(MSBuildThisFileDirectory)dtsLibAll.h" /> -->
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\ActiveBeeper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Alarm.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\AnalogKeys.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\AnalogSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Array.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Consts.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\CustomDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\CustomSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\CustomTimers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\DEF_Errors.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\DEF_Keys.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\DEF_Message.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\DigitalButton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\DigitalDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\DigitalSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\DigitalSwitch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\DownTimer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\dtsEncoder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Generics.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\I2CSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Messages.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Property.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\ROM_Array.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\SoftPCINT.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\SoftTimers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\TClass.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\TimerItem.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\TKeyShield.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\TLed.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)dtsLibAll.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\CustomTimers.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\DigitalButton.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\DownTimer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\dtsEncoder.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\Messages.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\ROM_Array.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\SoftTimers.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\stdInitList.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\TimerItem.cpp" />
+  </ItemGroup>
+</Project>
